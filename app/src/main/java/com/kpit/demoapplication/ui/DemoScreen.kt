@@ -10,10 +10,12 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.kpit.demo.viewmodel.DemoViewModel
+import com.kpit.demoapplication.viewmodel.DemoViewModel
 import com.kpit.ui_library.*
 
+@Preview(showBackground = true)
 @Composable
 fun DemoScreen(viewModel: DemoViewModel = viewModel()) {
     val text by viewModel.text.collectAsState()
