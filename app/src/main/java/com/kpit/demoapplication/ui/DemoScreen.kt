@@ -47,7 +47,7 @@ fun DemoScreen(viewModel: DemoViewModel = viewModel()) {
 
         CustomDropDown(
             options = listOf("Option 1", "Option 2", "Option 3"),
-            selectedOption = selected,
+            selectedOption = selected.ifEmpty { null },
             onOptionSelected = { viewModel.onSelectionChanged(it) }
         )
 

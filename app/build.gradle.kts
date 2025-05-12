@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-    implementation("com.kpit:ui_library:1.0.0")
+    implementation("com.kpit:ui_library:1.0.2")
     implementation(libs.androidx.core.ktx.v1101)
     implementation(libs.androidx.activity.compose.v172)
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
